@@ -40,8 +40,6 @@ cmake --build build
 ## Интерфейс
 
 ![Основное меню](docs/images/calc.png)
-вставь суда 
-
 
 ## Структура проекта
 
@@ -75,10 +73,6 @@ calc/
 ├── CMakeLists.txt
 └── README.md
 ```
-
-## Скриншот
-
-![Основное окно](docs/images/calc.png)
 
 ## Использование
 
