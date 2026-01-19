@@ -10,6 +10,7 @@ public:
     InputValidator() = default;
     ~InputValidator() = default;
 
+public:
     static bool canAddDigit(const QString& currentText, int maxLength);
     static bool canAddDecimalPoint(const QString& currentText, int maxLength);
     static bool isNotEmpty(const QString& text);

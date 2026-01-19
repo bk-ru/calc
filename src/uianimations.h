@@ -10,23 +10,17 @@ class UIAnimations
 {
 public:
     // Анимация ошибки (красная вспышка)
-    static void flashError(QWidget* widget, int duration = 500);
-    
+    static void flashError(QWidget* widget, int duration = 500);    
     // Анимация успеха (зеленая вспышка)
-    static void flashSuccess(QWidget* widget, int duration = 300);
-    
+    static void flashSuccess(QWidget* widget, int duration = 300);    
     // Анимация нажатия кнопки
-    static void buttonPress(QWidget* button, int duration = 100);
-    
+    static void buttonPress(QWidget* button, int duration = 100);    
     // Плавное появление
-    static void fadeIn(QWidget* widget, int duration = 300);
-    
+    static void fadeIn(QWidget* widget, int duration = 300);    
     // Плавное исчезновение
-    static void fadeOut(QWidget* widget, int duration = 300);
-    
+    static void fadeOut(QWidget* widget, int duration = 300);    
     // Встряхивание виджета
     static void shake(QWidget* widget, int duration = 500);
-
 private:
     UIAnimations() = default;
 };

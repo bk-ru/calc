@@ -18,9 +18,11 @@ public:
     };
     Q_ENUM(Theme)
 
+public:
     explicit ThemeManager(QObject *parent = nullptr);
     ~ThemeManager() override = default;
 
+public:
     void setTheme(Theme theme);
     Theme currentTheme() const;
     
@@ -29,18 +31,18 @@ public:
     
     void saveThemePreference();
     void loadThemePreference();
-    
     static QString themeName(Theme theme);
 
 signals:
     void themeChanged(ThemeManager::Theme theme);
 
 private:
-    Theme m_currentTheme;
-    
     QString getLightThemeStyleSheet() const;
     QString getDarkThemeStyleSheet() const;
     Theme detectSystemTheme() const;
+
+private:
+    Theme m_currentTheme;
 };
 
 Q_DECLARE_METATYPE(ThemeManager::Theme)

@@ -14,6 +14,7 @@ public:
     explicit CalculationHistory(QObject *parent = nullptr);
     ~CalculationHistory() override = default;
 
+public:
     void addEntry(const QString& expression, double result);
     void addEntry(const QString& fullExpression);
     QStringList getAll() const;
@@ -21,9 +22,11 @@ public:
     int count() const;
     void clear();
     
+public:
     void saveToFile(const QString& filename);
     void loadFromFile(const QString& filename);
     
+public:
     void setMaxSize(int maxSize);
     int maxSize() const;
 

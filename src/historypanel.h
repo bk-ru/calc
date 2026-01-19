@@ -30,7 +30,7 @@ private:
     QLabel* m_resultLabel;
 };
 
-// Боковая панель истории (как в Windows Calculator)
+// Боковая панель истории
 class HistoryPanel : public QWidget
 {
     Q_OBJECT
@@ -38,6 +38,7 @@ class HistoryPanel : public QWidget
 public:
     explicit HistoryPanel(CalculationHistory* history, QWidget* parent = nullptr);
     
+public:
     void updateHistory();
     void show();
     void hide();

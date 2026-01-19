@@ -10,6 +10,7 @@ public:
     DisplayFormatter() = default;
     ~DisplayFormatter() = default;
 
+public:
     static QString formatNumber(double value, int maxDigits = 10);
     static bool isValidNumber(const QString& text);
     static double toDouble(const QString& text, bool* ok = nullptr);

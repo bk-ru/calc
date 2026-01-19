@@ -26,13 +26,14 @@ private slots:
     void updateList();
 
 private:
+    void setupUi();
+    void connectSignals();
+
+private:
     MemoryManager* m_memory;
     QListWidget* m_listWidget;
     QPushButton* m_clearAllButton;
     QPushButton* m_deleteButton;
-    
-    void setupUi();
-    void connectSignals();
 };
 
 #endif // MEMORYDROPDOWNDIALOG_H
